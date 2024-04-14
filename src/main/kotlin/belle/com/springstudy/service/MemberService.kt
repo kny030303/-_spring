@@ -7,7 +7,6 @@ import belle.com.springstudy.repository.MemberRepository
 import belle.com.springstudy.repository.MemoryMemberRepository
 
 
-@Service
 class MemberService(@Autowired val memberRepository: MemberRepository) {
 
     /**
