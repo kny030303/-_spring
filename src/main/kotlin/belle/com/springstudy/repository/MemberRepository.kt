@@ -1,4 +1,4 @@
-package repository
+package belle.com.springstudy.repository
 
 import belle.com.springstudy.domain.Member
 

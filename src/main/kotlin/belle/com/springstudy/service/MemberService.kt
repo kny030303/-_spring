@@ -1,10 +1,14 @@
 package belle.com.springstudy.service
 
 import belle.com.springstudy.domain.Member
-import repository.MemberRepository
-import repository.MemoryMemberRepository
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Service
+import belle.com.springstudy.repository.MemberRepository
+import belle.com.springstudy.repository.MemoryMemberRepository
 
-class MemberService(val memberRepository: MemberRepository) {
+
+@Service
+class MemberService(@Autowired val memberRepository: MemberRepository) {
 
     /**
      * 회원 가입

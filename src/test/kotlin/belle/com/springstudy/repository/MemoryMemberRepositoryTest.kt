@@ -4,7 +4,7 @@ import belle.com.springstudy.domain.Member
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Test
-import repository.MemoryMemberRepository
+import belle.com.springstudy.repository.MemoryMemberRepository
 
 class MemoryMemberRepositoryTest {
     val repository = MemoryMemberRepository()

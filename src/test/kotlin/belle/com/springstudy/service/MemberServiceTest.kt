@@ -6,8 +6,8 @@ import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
-import repository.MemberRepository
-import repository.MemoryMemberRepository
+import belle.com.springstudy.repository.MemberRepository
+import belle.com.springstudy.repository.MemoryMemberRepository
 
 class MemberServiceTest {
 

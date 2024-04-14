@@ -1,7 +1,9 @@
-package repository
+package belle.com.springstudy.repository
 
 import belle.com.springstudy.domain.Member
+import org.springframework.stereotype.Repository
 
+@Repository
 class MemoryMemberRepository: MemberRepository {
     companion object {
         var store = mutableMapOf<Long, Member>()
