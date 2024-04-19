@@ -19,7 +19,7 @@ class MemoryMemberRepository: MemberRepository {
     }
 
     override fun findByName(name: String): Member? {
-        return store.values.find { it.name === name }
+        return store.values.find { it.name == name }
     }
 
     override fun findAll(): List<Member> {
