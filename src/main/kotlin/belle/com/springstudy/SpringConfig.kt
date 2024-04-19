@@ -9,18 +9,22 @@ import org.springframework.context.annotation.Configuration
 import javax.sql.DataSource
 
 @Configuration
-class SpringConfig(@Autowired val datasource: DataSource, @Autowired val em: EntityManager) {
+class SpringConfig(
+    @Autowired val datasource: DataSource,
+    @Autowired val em: EntityManager,
+    @Autowired val memberRepository: MemberRepository
+) {
 
     @Bean
     fun memberService(): MemberService {
-        return MemberService(memberRepository())
+        return MemberService(memberRepository)
     }
 
-    @Bean
-    fun memberRepository(): MemberRepository {
+    // @Bean
+    // fun memberRepository(): MemberRepository {
         // return MemoryMemberRepository()
         // return JdbcMemberRepository(datasource)
         // return JdbcTempleteMemberRepository(datasource)
-        return JpaMemberRepository(em)
-    }
+        // return JpaMemberRepository(em)
+    // }
 }
