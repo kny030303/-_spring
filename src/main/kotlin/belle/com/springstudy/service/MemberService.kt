@@ -5,8 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import belle.com.springstudy.repository.MemberRepository
 import belle.com.springstudy.repository.MemoryMemberRepository
+import org.springframework.transaction.annotation.Transactional
 
 
+@Transactional
 class MemberService(@Autowired val memberRepository: MemberRepository) {
 
     /**
